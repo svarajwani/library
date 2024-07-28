@@ -103,7 +103,7 @@ dialog {
 }
 
 .add-book button{
-    background-color: ;
+    background-color: rgb(230, 230, 230);
     border: solid 2px black;
     border-radius: 0.25rem;
 
