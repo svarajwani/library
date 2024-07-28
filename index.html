@@ -7,44 +7,32 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="card">
-            <div class="title">The Tech</div>
-            <div class="info-heading">Author:
-                <div class="info">Bilbert</div>
+    <h1 class="library-heading">Library</h1>
+    <dialog>
+        <form action="" class="add-book">
+            <h2 class="dialog-heading">Add Book</h2>
+
+            <div class="form-row title-input">
+                <label for="title">Title:</label>
+                <input type="text" id="title" placeholder="Ex. Technologies">
             </div>
-            <div class="info-heading">Pages:
-                <div class="info">34</div>
+
+            <div class="form-row author-input">
+                <label for="author">Author:</label>
+                <input type="text" id="author" placeholder="Ex. Hubert Binglebottom">
             </div>
-            <div class="info-heading">Status:
-                <div class="info">Read</div>
+
+            <div class="form-row pages-input">
+                <label for="pages">Number of pages:</label>
+                <input type="number" min="1" max="10000" id="pages" placeholder="Ex. 10">
             </div>
-        </div>
-        <div class="card">
-            <div class="title">The Tech</div>
-            <div class="info-heading">Author:
-                <div class="info">Bilbert</div>
-            </div>
-            <div class="info-heading">Pages:
-                <div class="info">34</div>
-            </div>
-            <div class="info-heading">Status:
-                <div class="info">Read</div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="title">The Tech</div>
-            <div class="info-heading">Author:
-                <div class="info">Bilbert</div>
-            </div>
-            <div class="info-heading">Pages:
-                <div class="info">34</div>
-            </div>
-            <div class="info-heading">Status:
-                <div class="info">Read</div>
-            </div>
-        </div>
-    </div>
+
+            <button type="submit" formmethod="dialog" class="close-modal">Close</button>
+            <button type="submit" class="submit-modal">Add Book</button>
+        </form>
+    </dialog>
+    <button class="open-modal">Add Book</button>
+    <div class="container"></div>
     <script src="library.js"></script>
 </body>
 </html>

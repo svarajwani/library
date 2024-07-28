@@ -4,6 +4,33 @@ body, html{
     background-color: rgb(230, 230, 230);
 }
 
+body{
+    text-align: center;
+}
+
+.library-heading{
+    margin: 0px;
+    margin-top: 3rem; 
+    margin-bottom: 2rem;
+}
+
+.open-modal{
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: solid 3px black;
+    border-radius: 0.5rem;
+}
+
+.open-modal:hover{
+    background-color: #bebebe;
+}
+
+.open-modal:active{
+    background-color: #ffffff;
+}
 .container{
     display: grid;
     justify-content: center;
@@ -12,10 +39,11 @@ body, html{
 }
 
 .card{
+    text-align: start;
     background-color: white;
     border-radius: 2rem;
-    width: 15rem;
-    height: 15rem;
+    min-width: 15rem;
+    min-height: 15rem;
     padding: 2rem;
     display: grid;
     align-content: center;
@@ -35,4 +63,58 @@ body, html{
     color: black;
     font-weight: 500;
     font-size: 1.5rem;
+}
+
+dialog {
+    border: solid 3px black;
+    border-radius: 0.5rem;
+}
+
+.add-book{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.form-row{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 8px;
+    grid-column: 1 / 3;
+}
+
+.dialog-heading{
+    margin: 0;
+    font-size: 30px;
+    grid-column: 1 / 3;
+}
+
+.add-book input {
+    border: solid 2px black;
+    border-radius: .2rem;
+    height: 21.5px;
+    padding-left: 6px;
+}
+
+.add-book input[type=text]{
+    width: 160px;
+}
+
+.add-book button{
+    background-color: ;
+    border: solid 2px black;
+    border-radius: 0.25rem;
+
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.add-book button:hover {
+    background-color: #bebebe;
+}
+
+.add-book button:active {
+    background-color: rgb(230, 230, 230);
 }

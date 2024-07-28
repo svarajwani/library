@@ -56,10 +56,24 @@ function displayBooks(){
             read.textContent = "Not read yet";
         }
         statusHeading.appendChild(read);
-
-    })
+    });
 }
 
-const bookExample = new Book("Techniques", "CringeCamTV", 35, "true");
-myLibrary.push(bookExample);
+const modal = document.querySelector("dialog");
+const openModal = document.querySelector(".open-modal");
+const closeModal = document.querySelector(".close-modal")
+
+openModal.addEventListener("click", () => {
+    modal.showModal();
+});
+
+
+const bookExample1 = new Book("Techniques", "CringeCamTV", 35, "true");
+myLibrary.push(bookExample1);
+const bookExample2 = new Book("Techniques", "CringeCamTV", 35, "true");
+myLibrary.push(bookExample2);
+const bookExample3 = new Book("Techniques", "CringeCamTV", 35, "true");
+myLibrary.push(bookExample3);
+
 displayBooks();
+
